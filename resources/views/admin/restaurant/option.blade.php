@@ -8,14 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    
   </head>
-@extends('layouts.date')
-
   <body>
-  
-    <div class="text-center pt-5">Find a Western restaurantとは</h1>
-    <div class="text-center pt-5">単身者・独身者向けの洋食店を簡単に見つけることができる洋食店専用レビューサイトです。</h1>
-    <div class="text-center pt-5">駅名を検索し、洋食店を探したり、口コミや写真を投稿し、情報を共有することができます。</h1>
+    <div class="text-center pt-5">ユーザーオプション</h1>
+    <div class="text-center pt-5">プロフィールを編集</h1>
+    <div class="text-center pt-5">アカウントを削除</h1>
+    <div class="text-center pt-5"></h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,5 +22,4 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
-
 </html>
