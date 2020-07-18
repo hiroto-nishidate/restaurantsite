@@ -18,9 +18,6 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function() {
     Route::get('restaurant/create', 'Admin\RestaurantController@add')->middleware('auth');
 
-//    Route::get('/contact', 'ContactController@index')->name('contact.index');
-//    Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
-//    Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 });
 
 Route::get('/contact', 'ContactController@index')->name('contact.index');
@@ -31,10 +28,13 @@ Route::get('restaurant/completed', 'UserController@completed');
 Route::get('restaurant/about', 'UserController@about');
 Route::get('restaurant/rule', 'UserController@rule');
 Route::get('restaurant/user/option', 'UserController@option');
+Route::get('restaurant/user/login', 'UserController@login');
+Route::get('restaurant', 'UserController@restaurant');
 
 Route::group(['middleware' => 'auth'], function() {
    Route::get('user/index', 'Admin\UserController@index');
    Route::get('user/edit', 'Admin\UserController@edit');
+   Route::get('user/change_completed', 'Admin\UserController@change_completed');
    Route::post('user/edit', 'Admin\UserController@update');
 });
 

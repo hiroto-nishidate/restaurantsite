@@ -27,6 +27,10 @@ class UserController extends Controller
         //保存
         $user->fill($user_form)->save();
         //リダイレクト
-        return redirect('user/index');
+        return redirect('user/change_completed');
     }
+        public function change_completed()
+    {
+        return view('user.change_completed');
+    }   
 }

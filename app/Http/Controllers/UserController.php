@@ -26,6 +26,17 @@ class UserController extends Controller
     {
         return view('restaurant.user.option');
     }    
+         //以下を追加
+    public function login()
+    {
+        return view('restaurant.user.login');
+    }    
     
+         //以下を追加
+    public function restaurant()
+    {
+        return view('restaurant');
+    }    
+      
     
 }
