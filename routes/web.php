@@ -32,6 +32,12 @@ Route::get('restaurant/about', 'UserController@about');
 Route::get('restaurant/rule', 'UserController@rule');
 Route::get('restaurant/user/option', 'UserController@option');
 
+Route::group(['middleware' => 'auth:user'], function() {
+   Route::get('user/index', 'Admin\UserController@index');
+   Route::get('user/edit', 'Admin\UserController@edit');
+   Route::post('user/edit', 'Admin\UserController@update');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
