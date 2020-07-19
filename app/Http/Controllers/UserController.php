@@ -42,6 +42,14 @@ class UserController extends Controller
     {
         return view('restaurant.user.register');
     }       
-      
-    
+               //以下を追加
+    public function account_delete_completed()
+    {
+        return view('restaurant.user.account_delete_completed');
+    } 
+                   //以下を追加
+    public function delete_confirm()
+    {
+        return view('restaurant.user.delete_confirm');
+    } 
 }

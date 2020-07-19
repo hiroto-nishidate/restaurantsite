@@ -14,13 +14,12 @@
 
   <body>
     
-    <div class="text-center pt-10">ユーザーオプション。</div>
+    <div class="text-center pt-10">本当にアカウントを削除してもよろしいでしょうか？</div>
 
     <div class="position-absolute h-50 w-100 m-0 d-flex align-items-center justify-content-center">
         <div>
           　
-            <a href="{{ url('/user/index') }}" class="btn btn-outline-primary btn-lg btn-block" role="button">ユーザー情報変更</a>
-            <a href="{{ url('restaurant/user/delete_confirm') }}" class="btn btn-outline-danger btn-lg btn-block" role="button">アカウント削除</a>
+            <a href="{{ url('restaurant/user/account_delete_completed') }}" class="btn btn-outline-danger btn-lg btn-block" role="button">アカウント削除</a>
         </div>
     </div>
 
