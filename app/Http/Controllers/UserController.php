@@ -37,6 +37,11 @@ class UserController extends Controller
     {
         return view('restaurant');
     }    
+         //会員登録後の登録完了後ページ
+    public function register()
+    {
+        return view('restaurant.user.register');
+    }       
       
     
 }

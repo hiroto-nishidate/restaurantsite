@@ -29,6 +29,7 @@ Route::get('restaurant/about', 'UserController@about');
 Route::get('restaurant/rule', 'UserController@rule');
 Route::get('restaurant/user/option', 'UserController@option');
 Route::get('restaurant/user/login', 'UserController@login');
+Route::get('restaurant/user/register', 'UserController@register');
 Route::get('restaurant', 'UserController@restaurant');
 
 Route::group(['middleware' => 'auth'], function() {
