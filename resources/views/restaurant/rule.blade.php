@@ -136,18 +136,14 @@
     <div style="margin-left:120px;">第14条（準拠法・裁判管轄）</div>                    
     <div style="margin-left:120px;">1.本規約の解釈にあたっては，日本法を準拠法とします。</div>                     
     <div style="margin-left:120px;">2.本サービスに関して紛争が生じた場合には，本サイトの本店所在地を管轄する裁判所を専属的合意管轄とします。</div>                    
-    <div style="margin-left:120px;">以上</div>                     
-
-
-
-
+    <div style="margin-left:120px;">以上</div>   
+    <footer class="fixed-bottom">  
+　　　@include('layouts.hooder')
+    </footer>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
-    <footer class="fixed-bottom">  
-　　　@include('layouts.hooder')
-    </footer>  
 </html>
