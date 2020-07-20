@@ -29,7 +29,7 @@
 　　  <div class="text-center">
       <button type="button" class="btn btn-outline-primary">検索</button>  
       </div>
-    
+    <div style="margin-top :100px"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

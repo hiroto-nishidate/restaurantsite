@@ -14,7 +14,7 @@
 @include('layouts.navbar')
 
 <body>
-
+<div style="margin-top :50px"></div>
 
         
 <body class="body">
@@ -65,6 +65,7 @@
         </div>
         </div>
     </div>
+<div style="margin-top :100px"></div>    
 </body>
     <footer class="fixed-bottom">  
 　　　@include('layouts.hooder')
