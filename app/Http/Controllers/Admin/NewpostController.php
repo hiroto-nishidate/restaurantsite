@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+
+use App\Newpost;
+
 class NewpostController extends Controller
 {
     public function add(){
@@ -17,12 +20,12 @@ public function create(Request $request)
       // Varidationを行う
       $this->validate($request, Newpost::$rules);
 ​
-      $newpost = new Newpost;
+      $newpost = new newpost;
       $form = $request->all();
 ​
-      // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
+        // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
         $path = $request->file('image')->store('public/image');
-        $news->image_path = basename($path);
+        $newposts->image_path = basename($path);
 
 ​
       // フォームから送信されてきた_tokenを削除する
@@ -31,15 +34,9 @@ public function create(Request $request)
       unset($form['image']);
 ​
       // データベースに保存する
-      $news->fill($form);
-      $news->save();
+      $newpost->fill($form);
+      $newpost->save();
 ​
-      return redirect('admin/news/create');
+      return redirect('restaurant/user/newpost');
   }
-
-
-
-
-
-
 }
