@@ -41,6 +41,9 @@ Route::group(['middleware' => 'auth'], function() {
    Route::post('user/edit', 'Admin\UserController@update');
 });
 
+Route::get('restaurant/user/newpost', 'Admin\NewpostController@add');
+Route::post('restaurant/user/newpost', 'Admin\NewpostController@create'); # 追記
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

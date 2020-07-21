@@ -52,4 +52,9 @@ class UserController extends Controller
     {
         return view('restaurant.user.delete_confirm');
     } 
+             //以下を追加
+    public function newpost()
+    {
+        return view('restaurant.user.newpost');
+    }  
 }
