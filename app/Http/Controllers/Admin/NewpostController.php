@@ -38,4 +38,18 @@ public function create(Request $request)
       $newpost->save();
       return redirect('restaurant/user/newpost');
   }
+  
+    // マイページの作成
+  public function mypage(Request $request)
+  {
+      $cond_title = $request->cond_title;
+      if ($cond_title != '') {
+          // 検索されたら検索結果を取得する
+          $posts = Newpost::where('title', $cond_title)->get();
+      } else {
+          // それ以外はすべての口コミデータを取得する
+          $posts = Newpost::all();
+      }
+      return view('restaurant.user.mypage', ['posts' => $posts, 'cond_title' => $cond_title]);
+  }
 }
