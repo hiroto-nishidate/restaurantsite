@@ -12,4 +12,5 @@ class Newpost extends Model
         'station' => 'required',
         'image_path' => 'required',        
     );
+    protected $fillable = ['store_name'];
 }
