@@ -9,8 +9,8 @@ class Newpost extends Model
     //バリデーションを設定
     public static $rules = array(
         'store_name' => 'required',
-        'station' => 'required',
-        'image_path' => 'required',        
+    //    'station' => 'required',
+    //    'image' => 'required',        
     );
     protected $fillable = ['store_name'];
 }

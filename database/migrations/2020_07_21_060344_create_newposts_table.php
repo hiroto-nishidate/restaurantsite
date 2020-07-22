@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNewpostTable extends Migration
+class CreateNewpostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateNewpostTable extends Migration
      */
     public function up()
     {
-        Schema::create('newpost', function (Blueprint $table) {
+        Schema::create('newposts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('store_name'); // 店名を保存するカラム
-            $table->string('station');  // 駅を保存するカラム
+            $table->string('station')->nullable();  // 駅を保存するカラム
             $table->string('image_path');  // 画像のパスを保存するカラム
             $table->string('phone')->nullable();//電話を保存するカラム
             $table->string('address')->nullable();//住所を保存するカラム
@@ -37,6 +37,6 @@ class CreateNewpostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('newpost');
+        Schema::dropIfExists('newposts');
     }
 }

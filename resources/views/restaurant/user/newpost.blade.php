@@ -54,7 +54,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">画像(必須)</label>
                         <div class="col-md-10">
-                            <input type="file" class="form-control-file" name="image_path">
+                            <input type="file" class="form-control-file" name="image">
                         </div>
                     </div>
                     <div class="form-group row">
