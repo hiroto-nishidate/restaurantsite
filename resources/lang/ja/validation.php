@@ -150,7 +150,7 @@ return [
         'title' => 'タイトル',
         'store_name' => '店名',
         'station' => '駅',        
-        'station' => '画像',             
+        'image_path' => '画像',             
         'body' => 'お問い合わせ内容'    
         ],
 ];

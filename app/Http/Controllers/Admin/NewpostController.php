@@ -24,7 +24,7 @@ public function create(Request $request)
 
         // フォームから画像が送信されてきたら、保存して、$news->image_path に画像のパスを保存する
         $path = $request->file('image')->store('public/image');
-        $newposts->image_path = basename($path);
+        $newpost->image_path = basename($path);
       // フォームから送信されてきた_tokenを削除する
       unset($form['_token']);
       // フォームから送信されてきたimageを削除する

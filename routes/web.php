@@ -39,10 +39,11 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('user/edit', 'Admin\UserController@edit');
    Route::get('user/change_completed', 'Admin\UserController@change_completed');
    Route::post('user/edit', 'Admin\UserController@update');
+   Route::get('restaurant/user/newpost', 'Admin\NewpostController@add');
+   Route::post('restaurant/user/newpost', 'Admin\NewpostController@create'); # 追記
+   
 });
 
-Route::get('restaurant/user/newpost', 'Admin\NewpostController@add');
-Route::post('restaurant/user/newpost', 'Admin\NewpostController@create'); # 追記
 
 Auth::routes();
 
