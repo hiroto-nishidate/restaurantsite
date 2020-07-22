@@ -52,4 +52,36 @@ public function create(Request $request)
       }
       return view('restaurant.user.mypage', ['posts' => $posts, 'cond_title' => $cond_title]);
   }
+   public function edit(Request $request)
+  {
+      // Newpost Modelからデータを取得する
+      $newpost = Newpost::find($request->id);
+      if (empty($newpost)) {
+        abort(404);    
+      }
+      return view('restaurant.user.edit', ['newpost_form' => $newpost]);
+  }
+
+  public function update(Request $request)
+  {
+      // Validationをかける
+      $this->validate($request, Newpost::$rules);
+      // Newpost Modelからデータを取得する
+      $newpost = Newpost::find($request->id);
+      // 送信されてきたフォームデータを格納する
+      $newpost_form = $request->all();
+      if (isset($newpost_form['image'])) {
+        $path = $request->file('image')->store('public/image');
+        $newpost->image_path = basename($path);
+        unset($newpost_form['image']);
+      } elseif (isset($request->remove)) {
+        $newpost->image_path = null;
+        unset($newpost_form['remove']);
+      }
+      unset($newpost_form['_token']);
+      // 該当するデータを上書きして保存する
+      $newpost->fill($newpost_form)->save();
+
+      return redirect('restaurant/user/mypage');
+  }
 }

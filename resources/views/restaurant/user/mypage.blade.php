@@ -67,7 +67,12 @@
                                     <td>{{ $newpost->price }}</td>
                                     <td>{{ $newpost->hours }}</td>
                                     <td>{{ $newpost->evaluation }}</td>
-                                    <td>{{ $newpost->reviews }}</td>                                    
+                                    <td>{{ $newpost->reviews }}</td>       
+                                    <td>
+                                    <div>
+                                    <a href="{{ action('Admin\NewpostController@edit', ['id' => $newpost->id]) }}">編集</a>    
+                　　                  </div>
+                                    </td>                                    
                                </tr>
                             @endforeach
                         </tbody>
