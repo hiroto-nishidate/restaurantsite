@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 
+
 use App\Newpost;
 
 class NewpostController extends Controller
@@ -20,7 +21,7 @@ public function create(Request $request)
       // Varidationを行う
       //dd($request);
       $this->validate($request, Newpost::$rules);
-      $newpost=new Newpost;
+      $newpost = new Newpost;
       $form = $request->all();
       
       if (isset($form['image'])) {
@@ -84,4 +85,15 @@ public function create(Request $request)
 
       return redirect('restaurant/user/mypage');
   }
+  
+    // 以下を追記　　
+  public function delete(Request $request)
+  {
+      // 該当するNewpost Modelを取得
+      $newpost = Newpost::find($request->id);
+      // 削除する
+      $newpost->delete();
+      return redirect('retaurant/user/mypage');
+  }  
+  
 }

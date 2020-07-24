@@ -72,6 +72,9 @@
                                     <div>
                                     <a href="{{ action('Admin\NewpostController@edit', ['id' => $newpost->id]) }}">編集</a>    
                 　　                  </div>
+                　　                  <div>
+                                    <a href="{{ action('Admin\NewpostController@delete', ['id' => $newpost->id]) }}">削除</a>
+                                    </div>    
                                     </td>                                    
                                </tr>
                             @endforeach
