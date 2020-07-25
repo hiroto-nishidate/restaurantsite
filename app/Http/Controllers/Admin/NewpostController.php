@@ -14,6 +14,11 @@ class NewpostController extends Controller
     public function add(){
         return view('restaurant.user.newpost');
     }
+    
+   public function showCreateForm()
+   {
+       return view('restaurant/user/newpost');
+   }
 
 public function create(Request $request)
   {

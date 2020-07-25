@@ -12,5 +12,5 @@ class Newpost extends Model
         'station' => 'required',
         'image' => 'required',        
     );
-    protected $fillable = ['store_name','station','image','phone','address','holiday','url','price','hours','evaluation','reviews'];
+    protected $fillable = ['store_name','station','image','phone','address','holiday','url','price','hours','evaluation','reviews','user_id'];
 }
