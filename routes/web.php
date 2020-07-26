@@ -39,13 +39,14 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('user/edit', 'Admin\UserController@edit');
    Route::get('user/change_completed', 'Admin\UserController@change_completed');
    Route::post('user/edit', 'Admin\UserController@update');
-   Route::get('restaurant/user/newpost', 'Admin\NewpostController@showCreateForm')->name('restaurant.user.create');
-   Route::post('restaurant/user/newpost', 'Admin\NewpostController@create');
-   Route::get('restaurant/user/mypage/{mypage}', 'Admin\NewpostController@mypage');
+   Route::get('restaurant/user/reviews/create', 'Admin\NewpostController@showCreateForm')->name('restaurant.user.create');
+   Route::post('restaurant/user/reviews/create', 'Admin\NewpostController@create');   
+   Route::get('restaurant/user/profiles/create', 'Admin\NewpostController@index');
    Route::get('restaurant/user/edit', 'Admin\NewpostController@edit'); // 追記
    Route::post('restaurant/user/edit', 'Admin\NewpostController@update'); // 追記
-   Route::get('restaurant/user/delete', 'Admin\NewpostController@delete'); // 追記
+   Route::get('restaurant/user/reviews/create', 'Admin\NewpostController@delete'); // 追記
 });
+
 
 
 Auth::routes();

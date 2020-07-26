@@ -14,14 +14,14 @@
   <body>
     <div class="container">
         <div class="row">
-            <h2>マイページ</h2>
+            <h2>投稿データ</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="{{ action('Admin\NewpostController@add') }}" role="button" class="btn btn-primary">新規投稿</a>
+                <a href="{{ action('Admin\NewpostController@create') }}" role="button" class="btn btn-primary">新規投稿</a>
             </div>
             <div class="col-md-8">
-                <form action="{{ action('Admin\NewpostController@mypage') }}" method="get">
+                <form action="{{ action('Admin\NewpostController@index') }}" method="get">
                     <div class="form-group row">
                         <label class="col-md-2">タイトル</label>
                         <div class="col-md-8">

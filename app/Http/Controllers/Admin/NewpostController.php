@@ -11,13 +11,13 @@ use App\Newpost;
 
 class NewpostController extends Controller
 {
-    public function add(){
-        return view('restaurant.user.newpost');
-    }
+//    public function add(){
+//        return view('restaurant.user.reviews.create');
+//    }
     
    public function showCreateForm()
    {
-       return view('restaurant/user/newpost');
+       return view('restaurant/user/reviews/create');
    }
 
 public function create(Request $request)
@@ -42,11 +42,11 @@ public function create(Request $request)
       // データベースに保存する
       $newpost->fill($form);
       $newpost->save();
-      return redirect('restaurant/user/newpost');
+      return redirect('restaurant/user/profiles/create');
   }
   
-    // マイページの作成
-  public function mypage(Request $request)
+    // マイページの一覧表示
+  public function index(Request $request)
   {
       $cond_title = $request->cond_title;
       if ($cond_title != '') {
@@ -56,7 +56,7 @@ public function create(Request $request)
           // それ以外はすべての口コミデータを取得する
           $posts = Newpost::all();
       }
-      return view('restaurant.user.mypage', ['posts' => $posts, 'cond_title' => $cond_title]);
+      return view('restaurant.user.profiles.create', ['posts' => $posts, 'cond_title' => $cond_title]);
   }
    public function edit(Request $request)
   {
@@ -88,7 +88,7 @@ public function create(Request $request)
       // 該当するデータを上書きして保存する
       $newpost->fill($newpost_form)->save();
 
-      return redirect('restaurant/user/mypage');
+      return redirect('restaurant/user/profiles/create');
   }
   
     // 以下を追記　　
@@ -98,7 +98,7 @@ public function create(Request $request)
       $newpost = Newpost::find($request->id);
       // 削除する
       $newpost->delete();
-      return redirect('retaurant/user/mypage');
+      return redirect('retaurant/user/reviews/create');
   }  
   
 }
