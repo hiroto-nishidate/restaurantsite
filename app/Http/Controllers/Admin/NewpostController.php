@@ -56,11 +56,10 @@ public function create(Request $request)
     // マイページの一覧表示
   public function index(Request $request)
   {
-      $query = Newpost::query();
-      $query->where('user_id',1); 
-      $query->where('store_name',1);
-      $posts = $query->get();// user_id が 1 のもの且つstore_name が 1 のものだけを取得する
-      
+      $show_mathing_user_id =null;
+      if(isset($show_mathing_user_id)){
+      $show_mathing_user_id = Newpost::where('user_id',$user_id)->get();  //user_idと一致するレコードを取得する。
+      }
       $cond_title = $request->cond_title;
       if ($cond_title != '') {
           // 検索されたら検索結果を取得する
