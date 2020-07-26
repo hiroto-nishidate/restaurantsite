@@ -4,10 +4,18 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\Auth; //ユーザーIDを取得するため。
 
 
 use App\Newpost;
+
+// ログイン中のユーザー情報取得
+Auth::user();
+ 
+// ログイン中のユーザーID取得
+Auth::id();
+
+
 
 class NewpostController extends Controller
 {
@@ -48,6 +56,11 @@ public function create(Request $request)
     // マイページの一覧表示
   public function index(Request $request)
   {
+      $query = Newpost::query();
+      $query->where('user_id',1); 
+      $query->where('store_name',1);
+      $posts = $query->get();// user_id が 1 のもの且つstore_name が 1 のものだけを取得する
+      
       $cond_title = $request->cond_title;
       if ($cond_title != '') {
           // 検索されたら検索結果を取得する
@@ -98,7 +111,7 @@ public function create(Request $request)
       $newpost = Newpost::find($request->id);
       // 削除する
       $newpost->delete();
-      return redirect('retaurant/user/reviews/create');
+      return redirect('restaurant/user/profiles/create');
   }  
   
 }

@@ -44,7 +44,7 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('restaurant/user/profiles/create', 'Admin\NewpostController@index');
    Route::get('restaurant/user/edit', 'Admin\NewpostController@edit'); // 追記
    Route::post('restaurant/user/edit', 'Admin\NewpostController@update'); // 追記
-   Route::get('restaurant/user/reviews/create', 'Admin\NewpostController@delete'); // 追記
+   Route::get('restaurant/user/profiles/delete', 'Admin\NewpostController@delete'); // 追記
 });
 
 
