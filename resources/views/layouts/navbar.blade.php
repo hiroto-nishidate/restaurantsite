@@ -3,7 +3,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navmenu">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" a href="{{ url('/restaurant/user/option') }}">👤</a>
-      <a class="nav-item nav-link active" a href="{{ url('/restaurant/user/newpost') }}">新規投稿</a>
+      <a class="nav-item nav-link active" a href="{{ url('/restaurant/user/reviews/create') }}">新規投稿</a>
     </div>
   </div>
 </nav>

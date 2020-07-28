@@ -32,8 +32,9 @@ public function create(Request $request)
   {
       // 以下を追記
       // Varidationを行う
-      //dd($request);
-      $this->validate($request, Newpost::$rules);
+      //dd($request);。
+     $this->validate($request, Newpost::$rules);
+      
       $newpost = new Newpost;
       $form = $request->all();
       
@@ -51,15 +52,13 @@ public function create(Request $request)
       $newpost->fill($form);
       $newpost->save();
       return redirect('restaurant/user/profiles/create');
+     // return view('restaurant.user.profiles.create', ['user' => $user]);
   }
   
     // マイページの一覧表示
   public function index(Request $request)
   {
-      $show_mathing_user_id =null;
-      if(isset($show_mathing_user_id)){
-      $show_mathing_user_id = Newpost::where('user_id',$user_id)->get();  //user_idと一致するレコードを取得する。
-      }
+      $user = Auth::user(); #ログインユーザー情報を取得します。
       $cond_title = $request->cond_title;
       if ($cond_title != '') {
           // 検索されたら検索結果を取得する
@@ -68,7 +67,10 @@ public function create(Request $request)
           // それ以外はすべての口コミデータを取得する
           $posts = Newpost::all();
       }
-      return view('restaurant.user.profiles.create', ['posts' => $posts, 'cond_title' => $cond_title]);
+      $user_id = $user->id;
+      $user_name = $user->name;
+      $user_id = $user_id;
+      return view('restaurant.user.profiles.create', ['posts' => $posts, 'cond_title' => $cond_title,'user' => $user]);
   }
    public function edit(Request $request)
   {

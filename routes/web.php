@@ -51,6 +51,7 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('restaurant/kadai/create4', 'Admin\Kadai4Controller@add'); //課題4
 });
 
+Route::get('/shops', 'ShopController@index')->name('shop.list'); 
 
 
 Auth::routes();

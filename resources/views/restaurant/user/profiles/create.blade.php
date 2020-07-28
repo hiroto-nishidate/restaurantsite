@@ -12,6 +12,9 @@
 @include('layouts.navbar')
 <div style="margin-top :50px"></div>
   <body>
+{{ $user->name }}          
+
+{{ $user_id }}  
     <div class="container">
         <div class="row">
             <h2>投稿データ</h2>
@@ -57,6 +60,7 @@
                         <tbody>
                             @foreach($posts as $newpost)
                                 <tr>
+                                <td>
                                     <th>{{ $newpost->id }}</th>
                                     <td>{{ $newpost->store_name }}</td>
                                     <td>{{ $newpost->station }}</td>
@@ -75,7 +79,7 @@
                 　　                  <div>
                                     <a href="{{ action('Admin\NewpostController@delete', ['id' => $newpost->id]) }}">削除</a>
                                     </div>    
-                                    </td>                                    
+                                    </td>  
                                </tr>
                             @endforeach
                         </tbody>
