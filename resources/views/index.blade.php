@@ -5,7 +5,7 @@
     
     <table class='table table-striped table-hover'>
         <tr>
-            <th>店名</th> <th>住所</th> <th>口コミ</th>
+            <th>店名</th> <th>住所</th> <th>口コミ</th><th>投稿者</th>
         </tr>
         @foreach($shops as $shop)
             <tr>
@@ -16,6 +16,7 @@
            　　  </td>
                 <td>{{ $shop->address }}</td>
                 <td>{{ $shop->reviews }}</td>
+                <td>{{ $shop->user->name }}</td>
              </tr>
         @endforeach      
     </table>
