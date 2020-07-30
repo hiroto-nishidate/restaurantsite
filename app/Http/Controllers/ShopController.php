@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class ShopController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+    
+    
+    
     public function index()
     {
         $shops = Shop::all();

@@ -6,13 +6,7 @@
        <p>{{ $shop->address }}</p>
        <p>{{ $shop->reviews }}</p>     
     </div>
-    <iframe id='map' src='https://www.google.com/maps/embed/v1/place?key=AIzaSyBK2zKbG_mkp7_K0W8qzNi-iqdRI0e7J4w;q={{ $shop->address }}'
-    <i frame id='map'
-     src='https://www.google.com/maps/embed/v1place?key=AIzaSyCghBscyGeA5zG4Q29LDAgIyCAwjamM9wM={{ $shop->address }}''
-     width='100%'
-     height='320'
-     frameborder='0'>
-    </iframe>  
+
 
     
     <div>
