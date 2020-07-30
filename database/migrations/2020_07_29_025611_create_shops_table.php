@@ -18,7 +18,6 @@ class CreateShopsTable extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('reviews');
-            $table->integer('category_id');
             $table->timestamps();
         });
     }
