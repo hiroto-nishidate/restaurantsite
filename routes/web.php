@@ -25,8 +25,8 @@ Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.conf
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 
 Route::get('restaurant/completed', 'UserController@completed');
-Route::get('restaurant/about', 'UserController@about');
-Route::get('restaurant/rule', 'UserController@rule');
+Route::get('/about', 'UserController@about'); // /aboutに変更
+Route::get('/rule', 'UserController@rule'); // /ruleに変更
 Route::get('restaurant/user/option', 'UserController@option');
 Route::get('restaurant/user/login', 'UserController@login');
 Route::get('restaurant/user/register', 'UserController@register');

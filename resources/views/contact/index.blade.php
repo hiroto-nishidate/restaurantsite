@@ -1,23 +1,11 @@
 
-<!doctype html>
-<html lang="ja">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layout')
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  </head>
-
-@include('layouts.navbar')
-
-<body>
+@section('content')
 <div style="margin-top :50px"></div>
 
         
-<body class="body">
+
     <div class="container">
         <div class="row text-center">
         <div class="col-md-12">
@@ -65,9 +53,5 @@
         </div>
         </div>
     </div>
-<div style="margin-top :100px"></div>    
-</body>
-    <footer class="fixed-bottom">  
-　　　@include('layouts.hooder')
-    </footer>
-</html>
+<div style="margin-top :100px"></div>       
+@endsection

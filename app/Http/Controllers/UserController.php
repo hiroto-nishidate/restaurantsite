@@ -14,12 +14,12 @@ class UserController extends Controller
      //以下を追加
     public function about()
     {
-        return view('restaurant.about');
+        return view('about');
     }   
      //以下を追加
     public function rule()
     {
-        return view('restaurant.rule');
+        return view('rule');
     }       
          //以下を追加
     public function option()

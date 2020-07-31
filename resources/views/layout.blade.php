@@ -10,7 +10,7 @@
         <script src='{{ asset("js/app.js") }}' defer></script>
     </head>
     <body>
-        <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+        <nav class='navbar navbar-expand-md navbar-dark bg-info fixed-top'>
             <a class='navbar-brand' href={{route('shop.list')}}>restaurant</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
        　　　　 <span class="navbar-toggler-icon"></span>
@@ -60,4 +60,15 @@
         @yield('content')
         </div>
     </body>
+    <footer class="fixed-bottom">  
+　　　　<nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <a href="{{ url('/about') }}" class="navbar-brand">Find a Western restaurantとは</a>
+  　　　　<div class="collapse navbar-collapse justify-content-end" id="navmenu">
+    　　<div class="navbar-nav">
+      　<a class="nav-item nav-link active" a href="{{ url('/contact') }}">お問い合わせ</a>
+      　<a class="nav-item nav-link active" a href="{{ url('/rule') }}">利用規約</a>
+    </div>
+  </div>
+</nav>
+ </footer>
 </html>
