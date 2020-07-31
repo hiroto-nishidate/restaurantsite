@@ -65,6 +65,7 @@
         <a href="{{ url('/about') }}" class="navbar-brand">Find a Western restaurantとは</a>
   　　　　<div class="collapse navbar-collapse justify-content-end" id="navmenu">
     　　<div class="navbar-nav">
+    　　<a class="nav-item nav-link active" a href="{{ url('/user/option') }}">👤</a>    
       　<a class="nav-item nav-link active" a href="{{ url('/contact') }}">お問い合わせ</a>
       　<a class="nav-item nav-link active" a href="{{ url('/rule') }}">利用規約</a>
     </div>

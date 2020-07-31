@@ -24,7 +24,7 @@ class UserController extends Controller
          //以下を追加
     public function option()
     {
-        return view('restaurant.user.option');
+        return view('user.option');
     }    
          //以下を追加
     public function login()
@@ -57,4 +57,8 @@ class UserController extends Controller
     {
         return view('restaurant.user.newpost');
     }  
-}
+        public function editPassword(){
+        return view('users.user_password_edit');
+    }
+
+}    

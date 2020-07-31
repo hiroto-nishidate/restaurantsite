@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth; //ユーザー登録を変更するため
 
+
 class UserController extends Controller
 {
     
