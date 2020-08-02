@@ -13,13 +13,12 @@ class ShopController extends Controller
         $this->middleware('auth')->except(['index', 'show']);
     }
     
-    
-    
-    public function index()
+        public function index()
     {
-        $shops = Shop::all();
+        $shops = Shop::paginate(5);
         return view('index',['shops' => $shops]);
     }
+    
     public function create()
     {
         return view('new');
@@ -44,7 +43,7 @@ class ShopController extends Controller
         $shop->address = request('address');
         $shop->reviews = request('reviews');
         $shop->save();
-        return redirect()->route('shop.detail', ['id' => $shop->id]);
+        return redirect()->route('shop.detail', ['id' => $shop->id])->with('new_message', '投稿が完了しました');
     }
     public function edit(Shop $shop, $id)
     {
@@ -58,13 +57,13 @@ class ShopController extends Controller
         $shop->address = request('address');
         $shop->reviews = request('reviews');
         $shop->save();
-        return redirect()->route('shop.detail', ['id' => $shop->id]);
+        return redirect()->route('shop.detail', ['id' => $shop->id])->with('edit_message', '投稿の編集が完了しました');
     }
     public function destroy($id)
     {
         $shop = Shop::find($id);
         $shop->delete();
-        return redirect('/shops');
+        return redirect('/shops')->with('delete_message', '投稿の削除が完了しました');
     }
     
 }

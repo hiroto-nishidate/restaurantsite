@@ -1,6 +1,11 @@
 @extends('layout')
 
 @section('content')
+@if (session('delete_message'))
+<div class="delete_message">
+    {{ session('delete_message') }}
+</div>
+@endif
     <h1>お店一覧</h1>
     
     <table class='table table-striped table-hover'>
@@ -27,3 +32,4 @@
     @endauth
 
 @endsection
+{{ $shops->links() }}
