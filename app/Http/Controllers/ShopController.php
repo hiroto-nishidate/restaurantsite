@@ -16,6 +16,7 @@ class ShopController extends Controller
         public function index()
     {
         $shops = Shop::paginate(5);
+        $shops->setPath('/shops');
         return view('index',['shops' => $shops]);
     }
     
