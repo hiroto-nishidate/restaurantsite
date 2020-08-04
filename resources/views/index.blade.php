@@ -29,9 +29,10 @@
     <div>
         <a href= {{ route('shop.new') }} class='btn btn-outline-primary'>新しいお店　</a>
         <div style="margin-top :50px"></div> 
-        {{ $shops->links() }}
+        
     </div>
     @endauth
+    {{ $shops->links() }}
 <div style="margin-top :100px"></div> 
 @endsection
 

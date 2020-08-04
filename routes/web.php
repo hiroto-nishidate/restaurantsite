@@ -24,14 +24,11 @@ Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 
-Route::get('restaurant/completed', 'UserController@completed');
 Route::get('/about', 'UserController@about'); // /aboutに変更
 Route::get('/rule', 'UserController@rule'); // /ruleに変更
 Route::get('/user/option', 'UserController@option'); // /user/optionに変更
-Route::get('restaurant/user/login', 'UserController@login');
-Route::get('restaurant/user/register', 'UserController@register');
-Route::get('restaurant/user/account_delete_completed', 'UserController@account_delete_completed');
-Route::get('restaurant/user/delete_confirm', 'UserController@delete_confirm');
+Route::get('/loginafter', 'UserController@loginafter'); // loginに変更
+Route::get('/registerafter', 'UserController@registerafter');
 Route::get('restaurant', 'UserController@restaurant');
 
 Route::group(['middleware' => 'auth'], function() {
@@ -49,6 +46,7 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('restaurant/kadai/create2', 'Admin\Kadai2Controller@add'); //課題2
    Route::get('restaurant/kadai/create3', 'Admin\Kadai3Controller@add'); //課題3
    Route::get('restaurant/kadai/create4', 'Admin\Kadai4Controller@add'); //課題4
+   Route::get('restaurant/kadai/index', 'Admin\KadaiController@index'); //課題1
 });
 
 Route::get('/shops', 'ShopController@index')->name('shop.list'); 

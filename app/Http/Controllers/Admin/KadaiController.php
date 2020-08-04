@@ -12,6 +12,7 @@ Auth::user();
 // ログイン中のユーザーID
 Auth::id();
 
+
 class KadaiController extends Controller
 {
     //
@@ -23,4 +24,11 @@ class KadaiController extends Controller
     $auths = Auth::user();
     return view('restaurant.kadai.create', [ 'auths' => $auths ]);
     }
+        public function index()
+    {
+        $value = 1;
+        return view('restaurant.kadai.index')->with('value',$value);
+    }
+    
+    
 }

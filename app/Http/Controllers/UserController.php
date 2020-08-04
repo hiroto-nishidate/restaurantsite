@@ -6,11 +6,6 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    //以下を追加
-    public function completed()
-    {
-        return view('restaurant.completed');
-    }
      //以下を追加
     public function about()
     {
@@ -27,9 +22,9 @@ class UserController extends Controller
         return view('user.option');
     }    
          //以下を追加
-    public function login()
+    public function loginafter()
     {
-        return view('restaurant.user.login');
+        return view('loginafter');
     }    
     
          //以下を追加
@@ -38,20 +33,10 @@ class UserController extends Controller
         return view('restaurant');
     }    
          //会員登録後の登録完了後ページ
-    public function register()
+    public function registerafter()
     {
-        return view('restaurant.user.register');
+        return view('registerafter');
     }       
-               //以下を追加
-    public function account_delete_completed()
-    {
-        return view('restaurant.user.account_delete_completed');
-    } 
-                   //以下を追加
-    public function delete_confirm()
-    {
-        return view('restaurant.user.delete_confirm');
-    } 
              //以下を追加
     public function newpost()
     {
