@@ -65,7 +65,6 @@
             <h3 class="card-title">旬香亭（しゅんこうてい）目白</h3>
             <p class="card-text mb-lg-4">目白駅すぐに店を構える洋食店です。王道の昔懐かしいメニューが自慢のお店で店内も開放感があり気持ちよく食事することができます。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>
@@ -78,7 +77,6 @@
             <p class="card-text mb-lg-4">昭和２４年に創業され、テレビ番組でも取り上げれたオムライスが人気です。昭和の雰囲気が漂うお店です。
 知る人ぞ知る老舗洋食屋です。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>
@@ -90,7 +88,6 @@
             <h3 class="card-title">生パスタの店エッコエッコ　上野</h3>
             <p class="card-text mb-lg-4">リーズブナルな値段で生パスタを楽しむことができます。セットメニューも豊富でドリンバイキングが付いているメニューもあります。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>
@@ -102,7 +99,6 @@
             <h3 class="card-title">ミトヤ 　池袋</h3>
             <p class="card-text mb-lg-4">価格が安くかつボリュームが多く、お腹いっぱいに食べることができます。チキンカレーがおすすめです。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>
@@ -114,7 +110,6 @@
             <h3 class="card-title">洋食ボンバー　豪徳寺</h3>
             <p class="card-text mb-lg-4">少ない席数ながら、スッキリとした清潔感のある店内で,一人でも気軽に入れます。味とコスパ高評価な洋食店です。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>
@@ -126,7 +121,6 @@
             <h3 class="card-title">グリルエフ　五反田</h3>
             <p class="card-text mb-lg-4">五反田で半世紀以上続く老舗レストランでハヤシライスがいちばん人気です。少しホロ苦さがある、コクのある味わいです。</p>
             <div class="text-center">
-              <a class="btn btn-outline-secondary d-block d-md-inline-block mb-2 mb-md-0" href="sample/index.html" role="button">メニューをみる</a>
             </div>
           </div>
         </div>

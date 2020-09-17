@@ -36,17 +36,6 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('user/edit', 'Admin\UserController@edit');
    Route::get('user/change_completed', 'Admin\UserController@change_completed');
    Route::post('user/edit', 'Admin\UserController@update');
-   Route::get('restaurant/user/reviews/create', 'Admin\NewpostController@showCreateForm')->name('restaurant.user.create');
-   Route::post('restaurant/user/reviews/create', 'Admin\NewpostController@create');   
-   Route::get('restaurant/user/profiles/create', 'Admin\NewpostController@index');
-   Route::get('restaurant/user/edit', 'Admin\NewpostController@edit'); // 追記
-   Route::post('restaurant/user/edit', 'Admin\NewpostController@update'); // 追記
-   Route::get('restaurant/user/profiles/delete', 'Admin\NewpostController@delete'); // 追記
-   Route::get('restaurant/kadai/create', 'Admin\KadaiController@add'); //課題1
-   Route::get('restaurant/kadai/create2', 'Admin\Kadai2Controller@add'); //課題2
-   Route::get('restaurant/kadai/create3', 'Admin\Kadai3Controller@add'); //課題3
-   Route::get('restaurant/kadai/create4', 'Admin\Kadai4Controller@add'); //課題4
-   Route::get('restaurant/kadai/index', 'Admin\KadaiController@index'); //課題1
 });
 
 Route::get('/shops', 'ShopController@index')->name('shop.list'); 
