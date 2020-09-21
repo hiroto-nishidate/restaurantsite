@@ -15,11 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('restaurant/create', 'Admin\RestaurantController@add')->middleware('auth');
-
-});
-
 Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
