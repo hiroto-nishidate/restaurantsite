@@ -19,10 +19,10 @@ Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 
-Route::get('/about', 'UserController@about'); // /aboutに変更
-Route::get('/rule', 'UserController@rule'); // /ruleに変更
-Route::get('/user/option', 'UserController@option'); // /user/optionに変更
-Route::get('/loginafter', 'UserController@loginafter'); // loginに変更
+Route::get('/about', 'UserController@about'); 
+Route::get('/rule', 'UserController@rule'); 
+Route::get('/user/option', 'UserController@option'); 
+Route::get('/loginafter', 'UserController@loginafter'); 
 Route::get('/registerafter', 'UserController@registerafter');
 Route::get('restaurant', 'UserController@restaurant');
 
