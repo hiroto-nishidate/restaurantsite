@@ -9,6 +9,7 @@
 </div>
 @endif
 
+<!-- フラッシュメッセージ 編集が完了しました。 -->
 @if (session('edit_message'))
 <div class="edit_message">
     {{ session('edit_message') }}
@@ -28,7 +29,7 @@
 
     <iframe src="https://maps.google.co.jp/maps?output=embed&q={{ $shop->address }}"></iframe>
     
-                <section id="sns">
+        <section id="sns">
             <div class="wrapper">
                 <div class="sns-box">
                     <h3 class="sub-title">Facebook</h3>
@@ -50,7 +51,9 @@
      
     <div>
         <a href={{ route('shop.list') }}>一覧に戻る</a>
-        @auth
+        <!-- ログインしているか。 -->
+        @auth  
+            <!-- 投稿者とログイン中のIDが一致していれば下記を実行する。 -->
             @if ($shop->user_id === $login_user_id)
                  |  <a href={{ route('shop.edit', ['id' => $shop->id]) }}>編集</a>
                 <p></p>
