@@ -17,9 +17,6 @@
 @endif
 
 
-<link href="{{ secure_asset('css/show.css') }}" rel="stylesheet">
-
-<div class="hoge">
     <h1>{{ $shop->name }}</h1>
   
     <div>
@@ -47,9 +44,7 @@
                 </div>
             </div><!-- /.wrapper -->
         </section><!-- /#sns -->
-    
      
-    <div>
         <a href={{ route('shop.list') }}>一覧に戻る</a>
         <!-- ログインしているか。 -->
         @auth  
@@ -57,14 +52,13 @@
             @if ($shop->user_id === $login_user_id)
                  |  <a href={{ route('shop.edit', ['id' => $shop->id]) }}>編集</a>
                 <p></p>
-</div>                 
+                 
                 <div style="margin-top :50px"></div>
                 {{ Form::open(['method' => 'delete', 'route' => ['shop.destroy',$shop->id]]) }}
                     {{ Form::submit('削除',['class' => 'btn btn-outline-danger']) }}
                 {{ Form::close() }}
             @endif
         @endauth    
-    </div>
-
+        
 <div style="margin-top :100px"></div>    
 @endsection
