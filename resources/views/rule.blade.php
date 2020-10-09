@@ -25,7 +25,7 @@
 
     <div style="margin-left:120px;">第3条（ユーザーIDおよびパスワードの管理）</div>
     <div style="margin-left:120px;">1.ユーザーは，自己の責任において，本サービスのユーザーIDおよびパスワードを管理するものとします。</div>
-    <div style="margin-left:120px;">2.ユーザーは，いかなる場合にも，ユーザーIDおよびパスワードを第三者に譲渡または貸与することはできません。Nomalogは，ユー</div>
+    <div style="margin-left:120px;">2.ユーザーは，いかなる場合にも，ユーザーIDおよびパスワードを第三者に譲渡または貸与することはできません。本サイトは，ユー</div>
     <div style="margin-left:120px;">ザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には，そのユーザーIDを登録しているユーザー自身による</div>
     <div style="margin-left:120px;">利用とみなします。</div>
     
@@ -60,7 +60,7 @@
             
     <div style="margin-left:120px;">（12）その他，本サイトが不適切と判断する行為</div>
     <div style="margin-left:120px;">第6条（本サービスの提供の停止等）</div>
-    <div style="margin-left:120px;">1.Nomalogは，以下のいずれかの事由があると判断した場合，ユーザーに事前に通知することなく本サービスの全部または一部の提</div>
+    <div style="margin-left:120px;">1.本サイトは，以下のいずれかの事由があると判断した場合，ユーザーに事前に通知することなく本サービスの全部または一部の提</div>
     <div style="margin-left:120px;">供を停止または中断することができるものとします。</div>   
                 
     <div style="margin-left:120px;">（1）本サービスにかかるコンピュータシステムの保守点検または更新を行う場合</div>
@@ -91,7 +91,7 @@
     <div style="margin-left:120px;">（5）本サイトからの問い合わせその他の回答を求める連絡に対して30日間以上応答がない場合</div>                    
     <div style="margin-left:120px;">（6）第2条第2項各号に該当する場合</div>                     
     <div style="margin-left:120px;">（7）その他，本サイトが本サービスの利用を適当でないと判断した場合</div>                    
-    <div style="margin-left:120px;">2.前項各号のいずれかに該当した場合，ユーザーは，当然にNomalogに対する一切の債務について期限の利益を失い，その時点にお</div>                     
+    <div style="margin-left:120px;">2.前項各号のいずれかに該当した場合，ユーザーは，当然に本サイトに対する一切の債務について期限の利益を失い，その時点にお</div>                     
     <div style="margin-left:120px;">いて負担する一切の債務を直ちに一括して弁済しなければなりません。</div>                    
     <div style="margin-left:120px;">3.本サイトは，本条に基づき本サイトが行った行為によりユーザーに生じた損害について，一切の責任を負いません。</div> 
                  
@@ -116,7 +116,7 @@
     <div style="margin-left:120px;">本サイトは，必要と判断した場合には，ユーザーに通知することなくいつでも本規約を変更することができるものとします。</div>     
                
     <div style="margin-left:120px;">第12条（通知または連絡）</div>                     
-    <div style="margin-left:120px;">ユーザーと本サイトとの間の通知または連絡は，Nomalogの定める方法によって行うものとします。</div>    
+    <div style="margin-left:120px;">ユーザーと本サイトとの間の通知または連絡は，本サイトの定める方法によって行うものとします。</div>    
                
     <div style="margin-left:120px;">第13条（権利義務の譲渡の禁止）</div>                     
     <div style="margin-left:120px;">ユーザーは，本サイトの書面による事前の承諾なく，利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し，</div>                    

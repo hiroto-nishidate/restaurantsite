@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contact', 'ContactController@index')->name('contact.index');
+Route::get('/contact', 'ContactController@index')->name('contact.index'); //お問い合わせ
 Route::post('/contact/confirm', 'ContactController@confirm')->name('contact.confirm');
 Route::post('/contact/thanks', 'ContactController@send')->name('contact.send');
 
