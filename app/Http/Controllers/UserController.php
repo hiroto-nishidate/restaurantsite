@@ -16,11 +16,7 @@ class UserController extends Controller
     {
         return view('rule');
     }       
-         //以下を追加
-    public function option()
-    {
-        return view('user.option');
-    }    
+   
          //以下を追加
     public function loginafter()
     {
@@ -37,13 +33,5 @@ class UserController extends Controller
     {
         return view('registerafter');
     }       
-             //以下を追加
-    public function newpost()
-    {
-        return view('restaurant.user.newpost');
-    }  
-        public function editPassword(){
-        return view('users.user_password_edit');
-    }
 
 }    
